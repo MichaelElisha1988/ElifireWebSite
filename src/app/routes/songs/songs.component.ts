@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-songs',
@@ -9,9 +10,12 @@ import { Component } from '@angular/core';
   styleUrl: './songs.component.scss',
 })
 export class SongsComponent {
-  min() {
-    throw new Error('Method not implemented.');
+  private readonly router = inject(Router);
+
+  navTo(route: string) {
+    this.router.navigate([route]);
   }
+
   ActiveIframe: number = 0;
   isMobile: boolean = false;
   listOfActiveIframe: boolean[] = [

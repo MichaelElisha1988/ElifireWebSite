@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface translation {
   artist: string;
@@ -14,6 +15,12 @@ export interface translation {
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  private readonly router = inject(Router);
+
+  navTo(route: string) {
+    this.router.navigate([route]);
+  }
+
   translationsSongList: translation[] = [
     {
       artist: 'Анжелика Варум',
