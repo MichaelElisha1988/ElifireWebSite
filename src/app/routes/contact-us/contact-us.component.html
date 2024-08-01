@@ -1,0 +1,53 @@
+<section class="contact-us">
+  <h1>- contact me -</h1>
+
+  <form [formGroup]="contactUsForm" (submit)="sendForm($event)">
+    <input
+      placeholder="Your Name"
+      [formControl]="contactUsForm.controls.name"
+      type="text"
+      id="name"
+      autocomplete="none"
+      [ngClass]="
+        contactUsForm.controls.name.errors &&
+        contactUsForm.controls.name.touched
+          ? 'error'
+          : ''
+      "
+    />
+
+    <textarea
+      placeholder="Please Explain What you need..."
+      [formControl]="contactUsForm.controls.about"
+      rows="4"
+      cols="50"
+      id="about"
+      [ngClass]="
+        contactUsForm.controls.about.errors &&
+        contactUsForm.controls.about.touched
+          ? 'error'
+          : ''
+      "
+    ></textarea>
+
+    <button type="submit" [disabled]="contactUsForm.invalid">
+      {{ contactUsForm.invalid ? "Fill the Form" : "Send" }}
+    </button>
+  </form>
+  <div>
+    <p>לאחר שתמלאו את הטופס, הדוא"ל ייפתח באופן אוטומטי ויהיה מוכן לשליחה.</p>
+    <br />
+    <hr />
+    <p>
+      После заполнения формы, электронное письмо откроется автоматически и будет
+      готово к отправке. <br />
+    </p>
+    <hr />
+    <p>
+      After you complete and submit the form, an email will automatically open.
+      This email will be pre-filled with the necessary details, so it will be
+      ready for you to review and send immediately. <br />
+    </p>
+    <hr />
+  </div>
+</section>

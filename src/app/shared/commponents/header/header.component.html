@@ -1,0 +1,11 @@
+<section class="header">
+  <ul class="navbar">
+    @for (Route of listOfRoutes; track $index) {
+    <li class="nav-item" (click)="onNav(Route)">
+      <a class="{{ Route.route }}" [ngClass]="Route.isActive ? 'active' : ''">{{
+        Route.title
+      }}</a>
+    </li>
+    }
+  </ul>
+</section>

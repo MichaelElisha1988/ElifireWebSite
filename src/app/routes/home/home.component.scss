@@ -1,0 +1,54 @@
+.home {
+  gap: 100px;
+  .pic {
+    width: min(90%, 215px);
+    height: min(90%, 215px);
+    img {
+      border: 1px solid black;
+      filter: grayscale(1);
+      border-radius: 50%;
+      pointer-events: none;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .about {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 100;
+  }
+  .title {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  a {
+    &.title {
+      margin-top: 20px;
+      color: black;
+    }
+  }
+  .comingUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    line-height: 120%;
+
+    .title {
+      margin-bottom: 20px;
+    }
+    .item-comingUp {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      font-weight: 100;
+      width: min(95%, 460px);
+    }
+  }
+}

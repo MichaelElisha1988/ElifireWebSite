@@ -1,0 +1,14 @@
+section {
+  width: min(80%, 420px);
+  .info {
+    p {
+      margin-top: 20px;
+      text-align: center;
+      letter-spacing: 3px;
+
+      a {
+        color: rgb(255, 136, 0);
+      }
+    }
+  }
+}

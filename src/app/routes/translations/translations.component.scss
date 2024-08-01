@@ -1,0 +1,43 @@
+.translations {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: min(80%, 720px);
+  flex-wrap: wrap;
+
+  .song-lyr {
+    border-radius: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.657);
+    padding: 20px 30px;
+    max-width: 150px;
+
+    .title {
+      font-size: 26px;
+      max-width: 160px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px 15px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      .download {
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          color: rgba(0, 119, 255, 0.59);
+        }
+      }
+      .preview {
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          color: rgba(43, 146, 69, 0.671);
+        }
+      }
+    }
+  }
+}

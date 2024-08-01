@@ -1,0 +1,17 @@
+<section class="home">
+  <div class="pic">
+    <img src="assets/profpic.jpg" alt="" />
+  </div>
+  <p class="about">Artist / Singer / Songwriter-translation / Musician /</p>
+  <div class="title">- Michael Elifire -</div>
+
+  <div class="comingUp">
+    <div class="title">- Coming Up Translates -</div>
+    @for (item of translationsSongList; track $index) {
+    <p class="item-comingUp">
+      {{ item.nameSong }} / {{ item.artist }} / {{ item.fromWere }} /
+    </p>
+    }
+    <a class="title" href="/support-artist">- Support Artist -</a>
+  </div>
+</section>
