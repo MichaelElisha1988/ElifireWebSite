@@ -27,7 +27,7 @@ export class ContactUsComponent {
 
     var link =
       'mailto:mishaelifire@gmail.com' +
-      '&subject=' +
+      '?subject=' +
       this.contactUsForm.controls.name.value +
       '&body=' +
       this.contactUsForm.controls.about.value;
