@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 export interface translation {
   artist: string;
   fromWere: string;
+  status: string;
   nameSong: string;
 }
 
@@ -25,17 +26,38 @@ export class HomeComponent {
     {
       artist: 'Анжелика Варум',
       fromWere: 'Direct Mail - Contact Me',
+      status: 'waiting to record',
       nameSong: 'Ля-ля-фа',
     },
     {
       artist: 'Севара',
       fromWere: 'Facebook - comments',
+      status: '90%',
       nameSong: 'Там нет меня',
     },
     {
       artist: 'Жестокий романс',
       fromWere: 'Facebook - Private Masseges',
+      status: 'waiting to record',
       nameSong: 'Любовь - волшебная страна',
+    },
+    {
+      artist: 'Максима Дунаевского',
+      fromWere: 'Facebook - comments',
+      status: 'panding',
+      nameSong: 'Ах этот вечер',
+    },
+    {
+      artist: 'Магомаев',
+      fromWere: 'Facebook - comments',
+      status: 'panding',
+      nameSong: 'Синяя вечность',
+    },
+    {
+      artist: 'Окуджавы',
+      fromWere: 'Facebook - comments',
+      status: 'panding',
+      nameSong: 'Ах война',
     },
   ];
 }

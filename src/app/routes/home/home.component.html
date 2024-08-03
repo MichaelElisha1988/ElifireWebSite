@@ -9,7 +9,8 @@
     <div class="title">- Coming Up Translates -</div>
     @for (item of translationsSongList; track $index) {
     <p class="item-comingUp">
-      {{ item.nameSong }} / {{ item.artist }} / {{ item.fromWere }} /
+      {{ item.nameSong }} / {{ item.artist }} / {{ item.fromWere }} / status: -
+      <span class="status">{{ item.status }}</span> -
     </p>
     }
     <a class="title" (click)="navTo('support-artist')">- Support Artist -</a>
