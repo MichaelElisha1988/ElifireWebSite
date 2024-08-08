@@ -34,6 +34,7 @@ export class SongsComponent {
     false,
     false,
     false,
+    false,
   ];
 
   constructor() {
