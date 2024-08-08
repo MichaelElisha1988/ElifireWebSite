@@ -32,7 +32,7 @@ export class HomeComponent {
     {
       artist: 'Севара',
       fromWere: 'Facebook - comments',
-      status: 'waiting to record',
+      status: 'recorded',
       nameSong: 'Там нет меня',
     },
     {
@@ -44,13 +44,13 @@ export class HomeComponent {
     {
       artist: 'Максима Дунаевского',
       fromWere: 'Facebook - comments',
-      status: 'starting translation - 1%',
+      status: 'starting translation - 12%',
       nameSong: 'Ах этот вечер',
     },
     {
       artist: 'Магомаев',
       fromWere: 'Facebook - comments',
-      status: 'starting translation - 1%',
+      status: 'starting translation - 9%',
       nameSong: 'Синяя вечность',
     },
     {
