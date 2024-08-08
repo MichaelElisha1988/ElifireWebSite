@@ -18,6 +18,24 @@ export class SongsComponent {
 
   ActiveIframe: number = 0;
   isMobile: boolean = false;
+  listOfIframeId: string[] = [
+    'Temse6ZxtRg',
+    'zq7OFWB9Na8',
+    'iOFEfpcvahM',
+    'rfxMXhknN8U',
+    'BBOc5yn07gk',
+    'wSNkMoenCAU',
+    'MUUmj7hc5Sc',
+    'Mur0znEB7RQ',
+    'ueVfEK9AjW4',
+    'zGijUgvL-xM',
+    'wlPb5GbBT4o',
+    'nJYz3vegWkc',
+    'p1HPis8eTB4',
+    'aZ65DBnD-Ec',
+    'Vqsq0HA3Y_w',
+    '2WujK2LcV4I',
+  ];
   listOfActiveIframe: boolean[] = [
     false,
     false,

@@ -30,12 +30,6 @@ export class HomeComponent {
       nameSong: 'Ля-ля-фа',
     },
     {
-      artist: 'Севара',
-      fromWere: 'Facebook - comments',
-      status: 'recorded',
-      nameSong: 'Там нет меня',
-    },
-    {
       artist: 'Жестокий романс',
       fromWere: 'Facebook - Private Masseges',
       status: 'waiting to record',
@@ -58,6 +52,12 @@ export class HomeComponent {
       fromWere: 'Facebook - comments',
       status: 'panding',
       nameSong: 'Ах война',
+    },
+    {
+      artist: 'Севара',
+      fromWere: 'Facebook - comments',
+      status: 'Done',
+      nameSong: 'Там нет меня',
     },
   ];
 }
