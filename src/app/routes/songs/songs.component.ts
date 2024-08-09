@@ -19,23 +19,62 @@ export class SongsComponent {
 
   ActiveIframe: number = 0;
   isMobile: boolean = false;
-  readonly listOfIframeId: string[] = [
-    'https://www.youtube.com/embed/Temse6ZxtRg',
-    'https://www.youtube.com/embed/zq7OFWB9Na8',
-    'https://www.youtube.com/embed/iOFEfpcvahM',
-    'https://www.youtube.com/embed/rfxMXhknN8U',
-    'https://www.youtube.com/embed/BBOc5yn07gk',
-    'https://www.youtube.com/embed/wSNkMoenCAU',
-    'https://www.youtube.com/embed/MUUmj7hc5Sc',
-    'https://www.youtube.com/embed/Mur0znEB7RQ',
-    'https://www.youtube.com/embed/ueVfEK9AjW4',
-    'https://www.youtube.com/embed/zGijUgvL-xM',
-    'https://www.youtube.com/embed/wlPb5GbBT4o',
-    'https://www.youtube.com/embed/nJYz3vegWkc',
-    'https://www.youtube.com/embed/p1HPis8eTB4',
-    'https://www.youtube.com/embed/aZ65DBnD-Ec',
-    'https://www.youtube.com/embed/Vqsq0HA3Y_w',
-    'https://www.youtube.com/embed/2WujK2LcV4I',
+  readonly listOfIframeId: string[][] = [
+    [
+      'https://www.youtube.com/embed/Temse6ZxtRg',
+      'assets/final-translations/סיפורה של האם.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/zq7OFWB9Na8',
+      'assets/final-translations/מאפננת, מכושפת.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/iOFEfpcvahM',
+      'assets/final-translations/יש עיניים לפרחים.pdf',
+    ],
+    ['https://www.youtube.com/embed/rfxMXhknN8U'],
+    [
+      'https://www.youtube.com/embed/BBOc5yn07gk',
+      'assets/final-translations/שיר הקוסם.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/wSNkMoenCAU',
+      'assets/final-translations/זוג יונים.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/MUUmj7hc5Sc',
+      'assets/final-translations/אינני שם.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/Mur0znEB7RQ',
+      'assets/final-translations/אהבת אמת היא כחלום.pdf',
+    ],
+    ['https://www.youtube.com/embed/ueVfEK9AjW4'],
+    ['https://www.youtube.com/embed/zGijUgvL-xM'],
+    [
+      'https://www.youtube.com/embed/wlPb5GbBT4o',
+      'assets/final-translations/כל עוד את איתי.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/nJYz3vegWkc',
+      'assets/final-translations/אופרטה מספר 2.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/p1HPis8eTB4',
+      'assets/final-translations/עוד סופה.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/aZ65DBnD-Ec',
+      'assets/final-translations/מעט חבל.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/Vqsq0HA3Y_w',
+      'assets/final-translations/הד אהבה.pdf',
+    ],
+    [
+      'https://www.youtube.com/embed/2WujK2LcV4I',
+      'assets/final-translations/מאוהב בך עד דמעות.pdf',
+    ],
   ];
   listOfActiveIframe: boolean[] = [
     false,

@@ -8,13 +8,15 @@
     *ngIf="listOfActiveIframe[$index]"
     [width]="isMobile ? '360' : '640'"
     [height]="isMobile ? '180' : '360'"
-    [src]="item | youtube : 'resourceUrl'"
+    [src]="item[0] | youtube : 'resourceUrl'"
+    id="myFrame"
     title="YouTube video player"
     frameborder="1"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
+
   }
 
   <div class="selection-section">
@@ -28,4 +30,15 @@
     (click)="navTo('support-artist')"
     >- Support Artist -</a
   >
+  @for (item of listOfIframeId; track $index) {
+  <iframe
+    *ngIf="listOfActiveIframe[$index] && item[1]"
+    class="pdf-lyrics"
+    [src]="item[1] | youtube : 'resourceUrl'"
+    [width]="isMobile ? '360' : '640'"
+    height="600px"
+    loading="lazy"
+    title="PDF-file"
+  ></iframe>
+  }
 </section>
