@@ -3,19 +3,19 @@
     <span class="onNow">{{ ActiveIframe + 1 }}</span> /
     {{ listOfActiveIframe.length }}
   </div>
-  <div *ngFor="let item of listOfIframeId; let $index = index">
-    <iframe
-      *ngIf="listOfActiveIframe[$index]"
-      [width]="isMobile ? '360' : '640'"
-      [height]="isMobile ? '180' : '360'"
-      src="https://www.youtube.com/embed/{{ item }}"
-      title="YouTube video player"
-      frameborder="1"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
+  @for (item of listOfIframeId; track $index) {
+  <iframe
+    *ngIf="listOfActiveIframe[$index]"
+    [width]="isMobile ? '360' : '640'"
+    [height]="isMobile ? '180' : '360'"
+    [src]="item | youtube : 'resourceUrl'"
+    title="YouTube video player"
+    frameborder="1"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+  }
 
   <div class="selection-section">
     <button (click)="prev()">prev</button>

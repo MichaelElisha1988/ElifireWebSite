@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { Router } from '@angular/router';
+import { YoutubePipe } from '../../shared/commponents/pipes/safePipe.pipe';
 
 @Component({
   selector: 'app-songs',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, YoutubePipe],
   templateUrl: './songs.component.html',
   styleUrl: './songs.component.scss',
 })
@@ -18,23 +19,23 @@ export class SongsComponent {
 
   ActiveIframe: number = 0;
   isMobile: boolean = false;
-  listOfIframeId: string[] = [
-    'Temse6ZxtRg',
-    'zq7OFWB9Na8',
-    'iOFEfpcvahM',
-    'rfxMXhknN8U',
-    'BBOc5yn07gk',
-    'wSNkMoenCAU',
-    'MUUmj7hc5Sc',
-    'Mur0znEB7RQ',
-    'ueVfEK9AjW4',
-    'zGijUgvL-xM',
-    'wlPb5GbBT4o',
-    'nJYz3vegWkc',
-    'p1HPis8eTB4',
-    'aZ65DBnD-Ec',
-    'Vqsq0HA3Y_w',
-    '2WujK2LcV4I',
+  readonly listOfIframeId: string[] = [
+    'https://www.youtube.com/embed/Temse6ZxtRg',
+    'https://www.youtube.com/embed/zq7OFWB9Na8',
+    'https://www.youtube.com/embed/iOFEfpcvahM',
+    'https://www.youtube.com/embed/rfxMXhknN8U',
+    'https://www.youtube.com/embed/BBOc5yn07gk',
+    'https://www.youtube.com/embed/wSNkMoenCAU',
+    'https://www.youtube.com/embed/MUUmj7hc5Sc',
+    'https://www.youtube.com/embed/Mur0znEB7RQ',
+    'https://www.youtube.com/embed/ueVfEK9AjW4',
+    'https://www.youtube.com/embed/zGijUgvL-xM',
+    'https://www.youtube.com/embed/wlPb5GbBT4o',
+    'https://www.youtube.com/embed/nJYz3vegWkc',
+    'https://www.youtube.com/embed/p1HPis8eTB4',
+    'https://www.youtube.com/embed/aZ65DBnD-Ec',
+    'https://www.youtube.com/embed/Vqsq0HA3Y_w',
+    'https://www.youtube.com/embed/2WujK2LcV4I',
   ];
   listOfActiveIframe: boolean[] = [
     false,
