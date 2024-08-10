@@ -28,7 +28,7 @@
     class="title"
     (click)="navTo('support-artist')"
     (click)="navTo('support-artist')"
-    >- Support Artist -</a
+    >-Support Artist-</a
   >
   @for (item of listOfIframeId; track $index) {
   <iframe
@@ -36,9 +36,17 @@
     class="pdf-lyrics"
     [src]="item[1] | youtube : 'resourceUrl'"
     [width]="isMobile ? '360' : '640'"
+    type="application/pdf"
     height="600px"
     loading="lazy"
     title="PDF-file"
   ></iframe>
+  <a
+    class="download"
+    *ngIf="listOfActiveIframe[$index] && item[1] && isMobile"
+    href="{{ item[1] }}"
+    download="newfilename"
+    >-Download-</a
+  >
   }
 </section>

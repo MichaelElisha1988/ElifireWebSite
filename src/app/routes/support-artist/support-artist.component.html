@@ -2,29 +2,38 @@
   <div class="info">
     <p dir="rtl">
       לתשומת לבכם, התמיכה זמינה כעת רק דרך מכשירים ניידים ובאמצעות אפליקציית
-      PayBox בקישור הבא:
-      <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
-        >Support Artist Here</a
-      >. אנו מתנצלים על חוסר הנוחות ועובדים על שיפור המערכת.
+      PayBox
+      <span *ngIf="isMobile">
+        בקישור הבא:
+        <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
+          >Support Artist Here</a
+        >. אנו מתנצלים על חוסר הנוחות ועובדים על שיפור המערכת.
+      </span>
     </p>
     <br />
     <hr />
     <p>
       Обратите внимание, что поддержка теперь доступна только через мобильные
-      устройства и с помощью приложения PayBox по следующей ссылке:
-      <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
-        >Support Artist Here</a
-      >. Приносим извинения за неудобства и работаем над улучшением системы.
+      устройства и с помощью приложения PayBox
+      <span *ngIf="isMobile">
+        по следующей ссылке:
+        <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
+          >Support Artist Here</a
+        >. Приносим извинения за неудобства и работаем над улучшением системы.
+      </span>
     </p>
     <br />
     <hr />
     <p>
       Please note that support is now only available via mobile devices and
-      through the PayBox App using the following link:
-      <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
-        >Support Artist Here</a
-      >. We apologize for the inconvenience and are working on improving the
-      system.
+      through the PayBox App
+      <span *ngIf="isMobile">
+        using the following link:
+        <a target="_blank" href="https://payboxapp.page.link/ctMMCNBGvEQYjAEX8"
+          >Support Artist Here</a
+        >. We apologize for the inconvenience and are working on improving the
+        system.</span
+      >
     </p>
     <br />
     <hr />

@@ -53,4 +53,15 @@
   .pdf-lyrics {
     margin-top: 35px;
   }
+  .download {
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }
