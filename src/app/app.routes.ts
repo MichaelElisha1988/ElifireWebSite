@@ -10,7 +10,7 @@ import { RusComponent } from './routes/about/comp/rus/rus.component';
 import { ContactUsComponent } from './routes/contact-us/contact-us.component';
 
 export const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'songs', component: SongsComponent },
   { path: 'translations', component: TranslationsComponent },
   {
@@ -31,5 +31,5 @@ export const routes: Routes = [
     path: 'contact-me',
     component: ContactUsComponent,
   },
-  { path: '**', redirectTo: 'home' },
+  { path: '**', redirectTo: '' },
 ];
