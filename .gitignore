@@ -41,7 +41,7 @@ testem.log
 .DS_Store
 Thumbs.db
 favicon.ico
-# /docs/favicon.ico
-# /docs/ads.txt
-# /docs/CNAME
-# /docs/CNAME.txt
+/docs/favicon.ico
+/docs/ads.txt
+/docs/CNAME
+/docs/CNAME.txt
