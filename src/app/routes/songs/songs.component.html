@@ -3,6 +3,19 @@
     <span class="onNow">{{ ActiveIframe + 1 }}</span> /
     {{ listOfActiveIframe.length }}
   </div>
+  <!-- ElifireAdUnits -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-4086762240008321"
+    data-ad-slot="8523148039"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- END ElifireAdUnits -->
   @for (item of listOfIframeId; track $index) {
   <iframe
     *ngIf="listOfActiveIframe[$index]"
@@ -16,6 +29,19 @@
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
   ></iframe>
+  <!-- ElifireAdUnits -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-4086762240008321"
+    data-ad-slot="8523148039"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- END ElifireAdUnits -->
 
   }
 
@@ -30,6 +56,19 @@
     (click)="navTo('support-artist')"
     >-Support Artist-</a
   >
+  <!-- ElifireAdUnits -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-4086762240008321"
+    data-ad-slot="8523148039"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- END ElifireAdUnits -->
   @for (item of listOfIframeId; track $index) {
   <iframe
     *ngIf="listOfActiveIframe[$index] && item[1]"
@@ -41,6 +80,19 @@
     loading="lazy"
     title="PDF-file"
   ></iframe>
+  <!-- ElifireAdUnits -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-4086762240008321"
+    data-ad-slot="8523148039"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- END ElifireAdUnits -->
   <a
     class="download"
     *ngIf="listOfActiveIframe[$index] && item[1] && isMobile"
@@ -49,4 +101,17 @@
     >-Download-</a
   >
   }
+  <!-- ElifireAdUnits -->
+  <ins
+    class="adsbygoogle"
+    style="display: block"
+    data-ad-client="ca-pub-4086762240008321"
+    data-ad-slot="8523148039"
+    data-ad-format="auto"
+    data-full-width-responsive="true"
+  ></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- END ElifireAdUnits -->
 </section>
